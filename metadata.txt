@@ -1,0 +1,7 @@
+Name: Blix Theme
+Author: Pedro Algarvio, aka, s0undt3ch <ufs@ufsoft.org>
+License: BSD
+Version: 0.1
+Preview: blix_theme::blix_theme_preview.png
+Summary: Blix theme taken from the "Blix" wordpress template.
+Description: Blix theme taken from the "Blix" wordpress template.

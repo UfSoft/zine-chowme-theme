@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+{#
+vim: sw=2 ts=2 fenc=utf-8
+#}
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} &mdash; {{ cfg.blog_title|e }}</title>
+    <link rel="stylesheet" type="text/css" href="{{
+    url_for('blix_theme/shared', filename='style.css') }}">
+    {{ get_page_metadata() }}
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1><center>{{ cfg.blog_tagline }}</center></h1>
+      </div>
+      <hr class="low" />
+      <div id="content">
+        {% block contents %}{% endblock %}
+      </div>
+      <hr class="low" />
+      <div id="sidebar">
+        {{ render_widgets() }}
+      </div>
+      <hr class="low" />
+      <div id="footer">
+        <center>
+          <p>Proudly powered by <a href="http://textpress.pocoo.org/">TextPress</a>.</p>
+          <p><strong>&copy; Copyright My Operating System Guidelines.
+            All rights reserved.</strong><br/>
+            Design by <a href="/">James G. Corteciano</a><br/>
+            LOGIN_LINK</p>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>
+
